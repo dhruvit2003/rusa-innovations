@@ -113,20 +113,24 @@ input[type=checkbox] {
 /* HAMBURGER MENU */
 .hamburger {
   display: none;
+  padding: 0px 5px;
   font-size: 24px;
   user-select: none;
 }
 
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
+
  .menu {
     display:none;
     position: absolute;
-  background-color: #0078ff;
-    right: 0;
-    left: 0;
+    background-color: #0078ff;
+    right: 50;
+    left: 50;
+    border-radius: 8px;
     text-align: center;
     padding: 16px 0;
+    margin-top: 6%;
   }
 
   .menu li:hover {
@@ -141,10 +145,16 @@ input[type=checkbox] {
 
   input[type=checkbox]:checked ~ .menu {
     display: block;
+
   }
 
   .hamburger {
     display: block;
+  }
+
+  .hamburger:hover {
+    display: block;
+    background-color:#0078ff;
   }
 
   .dropdown {
