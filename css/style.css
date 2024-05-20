@@ -16,7 +16,7 @@ header.scrolling_class nav ul li a {color: var(--Primary);}
 .mobile-ul{display: none;}
 /* header.scrolling_class nav ul li:hover a {border-color: var(--White);color: var(--White);}
 header.scrolling_class .link-div a{color: var(--White);} */
-
+/* added comment */ 
 header a {
 position: relative;
   /* color: #fff; */
