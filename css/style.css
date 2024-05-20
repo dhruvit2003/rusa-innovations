@@ -50,7 +50,7 @@ header a:hover:after {   width: 100%;   left: 0; }
   bottom: 0;
   content: "";
   display: block;
-  height: 4px;
+  height: 2px;
   /* left: 50%; */
   position: absolute;
   background: var(--Primary);
