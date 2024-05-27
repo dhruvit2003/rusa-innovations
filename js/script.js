@@ -1,15 +1,26 @@
 var targetElement = document.getElementById("header");
 
-targetElement.hidden=true
+// targetElement.hidden=true
 targetElement.classList.add("scrolling_class");
 function addClassOnScroll() {
-  if (window.scrollY < 500 ) {
-    targetElement.hidden=true
+  if(window.scrollY > 200){ 
+    targetElement.classList.add("gone");
   } else {
-    targetElement.hidden=false
+    targetElement.classList.remove("gone");
   }
+  // if (window.scrollY < 500 ) {
+  //   targetElement.hidden=true
+  // } else {
+  //   targetElement.hidden=false
+  // }
 }
 window.addEventListener("scroll", addClassOnScroll);
+
+var home=document.getElementById("home");
+var vid = document.getElementById("myVideo");
+vid.oncanplaythrough = function(){
+  home.classList.toggle("backgroundimage");
+}
 
 function menuBtnFunction(menuBtn) {
   menuBtn.classList.toggle("active");
