@@ -1,6 +1,5 @@
 var targetElement = document.getElementById("header");
 
-// targetElement.hidden=true
 targetElement.classList.add("scrolling_class");
 function addClassOnScroll() {
   if(window.scrollY > 100){ 
@@ -8,18 +7,13 @@ function addClassOnScroll() {
   } else {
     targetElement.classList.remove("gone");
   }
-  // if (window.scrollY < 500 ) {
-  //   targetElement.hidden=true
-  // } else {
-  //   targetElement.hidden=false
-  // }
 }
 window.addEventListener("scroll", addClassOnScroll);
 
 var home=document.getElementById("home");
 var vid = document.getElementById("myVideo");
 vid.oncanplaythrough = function(){
-  home.classList.toggle("backgroundimage");
+  // document.getElementById("myImage").hidden=true
 }
 
 function menuBtnFunction(menuBtn) {
@@ -72,7 +66,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 function submit(){
-  document.form1.reset();
+  // document.form1.reset();
 }
 // var options = {
 //     height: 1470,
