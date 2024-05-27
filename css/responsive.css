@@ -7,7 +7,6 @@
         width: 100%;
         height: 100%;
     }
-    .banner-wrapper{margin-top: 50px;}
     .service-main .service{flex: 0 0 33.33%;max-width: 33.33%;}
 }
 
@@ -19,7 +18,6 @@
         width: 100%;
     }
     .subscribe-left{margin-bottom: 20px;}
-    .banner-right{margin-top: 0;}
     .products-section .title-box{width: 100%;}
     .subscribe-right{padding-left: 0;}
 }
@@ -54,7 +52,6 @@
     .benefites-right , .banner-left , .about-right , .subscribe-right , .subscribe-left{width: 100%;}
     .products-section .title-box{margin: 0 auto 20px;}
     .product-slider .swiper{padding: 0 10px;}
-    .banner-wrapper{margin-top: 0;}
     .service-main .service{flex: 0 0 50%;max-width: 50%;padding: 10px;}
     .service-main .service h3{font-size: 16px;}
     .link-div , .menu-btn-3 {position: relative;z-index: 1111;}
