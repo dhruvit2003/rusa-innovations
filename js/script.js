@@ -13,7 +13,7 @@ window.addEventListener("scroll", addClassOnScroll);
 var home=document.getElementById("home");
 var vid = document.getElementById("myVideo");
 vid.oncanplaythrough = function(){
-  // document.getElementById("myImage").hidden=true
+  document.getElementById("myImage").hidden=true
 }
 
 function menuBtnFunction(menuBtn) {
