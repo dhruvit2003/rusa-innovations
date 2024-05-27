@@ -3,7 +3,7 @@ var targetElement = document.getElementById("header");
 // targetElement.hidden=true
 targetElement.classList.add("scrolling_class");
 function addClassOnScroll() {
-  if(window.scrollY > 200){ 
+  if(window.scrollY > 100){ 
     targetElement.classList.add("gone");
   } else {
     targetElement.classList.remove("gone");
