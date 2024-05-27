@@ -1,10 +1,12 @@
 var targetElement = document.getElementById("header");
 
+targetElement.hidden=true
+targetElement.classList.add("scrolling_class");
 function addClassOnScroll() {
-  if (window.scrollY > 100) {
-    targetElement.classList.add("scrolling_class");
+  if (window.scrollY < 500 ) {
+    targetElement.hidden=true
   } else {
-    targetElement.classList.remove("scrolling_class");
+    targetElement.hidden=false
   }
 }
 window.addEventListener("scroll", addClassOnScroll);
