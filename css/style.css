@@ -94,7 +94,9 @@ header a:hover:after {   width: 100%;   left: 0; }
   background-color: rgba(0, 0, 0, 1);
 }
 
-.banner-section{position: relative; height: 100vh; display: flex;align-items: center;  background-image: url(../images/banner-bg.jpeg);background-repeat: no-repeat;background-position: center;background-size: cover;}
+.banner-section{position: relative; height: 100vh; display: flex;align-items: center;
+    /* background-image: url(../images/banner-bg.jpeg);background-repeat: no-repeat;background-position: center;background-size: cover; */
+  }
 .banner-wrapper{display: flex;align-items: center;justify-content: space-between;width: 100%;position: relative;z-index: 1;}
 .banner-section::before{content: '';background-color: rgba(0, 0, 0, 0.8);width: 100%;height: 100%;position: absolute;inset: 0;}
 .banner-right{padding: 50px 0;}
