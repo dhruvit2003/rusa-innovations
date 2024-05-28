@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 var targetElement = document.getElementById("header");
 var home = document.getElementById("home");
 
@@ -31,6 +33,18 @@ function removeBodyClass(className) {
   document.body.classList.remove(className);
 }
 
+// gsap.to("#myImage", {
+//   scale: 1.5,
+//   // y:-470,
+//   duration: 1,
+//   scrollTrigger: {
+//     trigger: ".banner-section",
+//     start: "top bottom",
+//     end: "50% bottom",
+//     toggleAction: "replay",
+//     markers: true,
+//   }
+// })
 
 AOS.init();
 
