@@ -1,12 +1,14 @@
 var targetElement = document.getElementById("header");
+var home = document.getElementById("home");
 
 targetElement.classList.add("scrolling_class");
 function addClassOnScroll() {
-  if(window.scrollY > 100){ 
+  if(window.scrollY > 180){ 
     targetElement.classList.add("gone");
   } else {
     targetElement.classList.remove("gone");
   }
+  home.style.transform = "translateY(" + -window.scrollY + "px)";
 }
 window.addEventListener("scroll", addClassOnScroll);
 
