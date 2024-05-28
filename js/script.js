@@ -65,9 +65,6 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
-function submit(){
-  // document.form1.reset();
-}
 // var options = {
 //     height: 1470,
 //     width: 878,
