@@ -2,6 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 var targetElement = document.getElementById("header");
 var home = document.getElementById("home");
+var bannerImg = document.getElementById("myImage");
 
 targetElement.classList.add("scrolling_class");
 function addClassOnScroll() {
@@ -10,14 +11,28 @@ function addClassOnScroll() {
   } else {
     targetElement.classList.remove("gone");
   }
-  home.style.transform = "translateY(" + -window.scrollY + "px)";
+  home.style.transform = "translateY(" + -window.scrollY*0.75 + "px)";
+  if(window.scrollY==0){
+    vid.play();
+    vid.oncanplaythrough = function(){
+      bannerImg.hidden=true;
+    }
+  }
 }
 window.addEventListener("scroll", addClassOnScroll);
 
 var home=document.getElementById("home");
 var vid = document.getElementById("myVideo");
-vid.oncanplaythrough = function(){
-  document.getElementById("myImage").hidden=true
+// vid.oncanplaythrough = function(){
+//   document.getElementById("myImage").hidden=true;
+//   vid.play();
+// }
+
+if(window.scrollY<10){
+  vid.play();
+  vid.oncanplaythrough = function(){
+    bannerImg.hidden=true;
+  }
 }
 
 function menuBtnFunction(menuBtn) {
