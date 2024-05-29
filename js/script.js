@@ -28,12 +28,21 @@ var vid = document.getElementById("myVideo");
 //   vid.play();
 // }
 
-if(window.scrollY<10){
-  vid.play();
-  vid.oncanplaythrough = function(){
-    bannerImg.hidden=true;
+vid.addEventListener('loadeddata', (e) => {
+  if(vid.readyState >= 3){
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+    bannerImg.hidden = true;
+    vid.play();
   }
-}
+});
+
+
+// if(window.scrollY<10){
+//   vid.play();
+//   vid.oncanplaythrough = function(){
+//     bannerImg.hidden=true;
+//   }
+// }
 
 function menuBtnFunction(menuBtn) {
   menuBtn.classList.toggle("active");
